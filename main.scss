@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+
+  h3 {
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+  }
+}
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  overflow: hidden;
+
+  .layer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+    position: relative;
+    box-shadow: 0 5px 5px #000000;
+    border-radius: 10px;
+    &:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .cta {
+      padding: 0 15px;
+      cursor: text;
+      z-index: 999;
+    }
+  }
+
+  .layer-1 {
+    background-color: rgb(16, 156, 27);
+  }
+  .layer-2 {
+    background-color: rgb(14, 47, 109);
+  }
+  .layer-3 {
+    background-color: rgb(109, 14, 77);
+  }
+  .layer-4 {
+    background-color: rgb(109, 36, 14);
+  }
+  .layer-5 {
+    background-color: rgb(25, 109, 14);
+  }
+  .layer-6 {
+    background-color: rgb(109, 14, 14);
+  }
+}
